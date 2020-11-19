@@ -563,7 +563,6 @@ body.modal-open {
 
 .hero-photo-container {
   width: 178px;
-  height: 208px;
   margin: 0px auto;
   z-index: 1;
 }
@@ -573,16 +572,18 @@ body.modal-open {
     top: 165px;
     left: 370px;
     width: 375px;
-    height: 320px;
   }
 }
 @media screen and (min-width: 1366px) {
   .hero-photo-container {
     top: 150px;
     left: 660px;
-    width: 841px;
-    height: 730px;
+    width: 700px;
   }
+}
+
+.hero-photo {
+  width: 100%;
 }
 
 .offer-section {
@@ -1002,6 +1003,7 @@ body.modal-open {
 }
 .methods-list-item:hover, .methods-list-item:focus {
   background-color: #ff6b09;
+  outline: none;
 }
 .methods-list-item:hover .methods-list-item-title, .methods-list-item:hover .methods-list-item-description, .methods-list-item:hover .methods-list-item-line, .methods-list-item:hover svg, .methods-list-item:focus .methods-list-item-title, .methods-list-item:focus .methods-list-item-description, .methods-list-item:focus .methods-list-item-line, .methods-list-item:focus svg {
   color: #ffffff;
@@ -1787,11 +1789,11 @@ body.modal-open {
   font-weight: 500;
   color: #3d3d3d;
   padding-left: 24px;
-}
-@media screen and (max-width: 1366px) {
-  .guaranties-item:not(:last-child) {
-    padding-bottom: 23px;
-  }
+  /* &:not(:last-child) {
+    @media screen and (max-width: 1366px) {
+      padding-bottom: 23px;
+    }
+  }*/
 }
 @media screen and (max-width: 767px) {
   .guaranties-item {
@@ -1799,11 +1801,17 @@ body.modal-open {
     font-size: 12px;
     line-height: 1.666;
   }
+  .guaranties-item:not(:last-child) {
+    padding-bottom: 23px;
+  }
 }
 @media screen and (min-width: 768px) {
   .guaranties-item {
     padding-left: 37px;
     font-size: 12px;
+  }
+  .guaranties-item:not(:last-child) {
+    padding-bottom: 20px;
   }
 }
 @media screen and (min-width: 1366px) {
@@ -2042,11 +2050,6 @@ body.modal-open {
   }
 }
 
-.slider-container {
-  margin-right: 20px;
-  margin-left: 20px;
-}
-
 .slider-left {
   display: flex;
   flex-direction: column;
@@ -2157,7 +2160,7 @@ body.modal-open {
 @media screen and (min-width: 1366px) {
   .slider-icon {
     margin-top: 40px;
-    margin-left: 340px;
+    margin-left: 380px;
   }
 }
 
@@ -2195,7 +2198,7 @@ body.modal-open {
   }
 
   .slick-next {
-    right: -100px;
+    right: -70px;
   }
 }
 .slider-list-item:hover img,
