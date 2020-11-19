@@ -804,8 +804,10 @@ body.modal-open {
     line-height: 1.8333333333;
   }
 }
-.problems .container {
-  position: relative;
+@media screen and (max-width: 1629px) {
+  .problems .container {
+    position: relative;
+  }
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .problems .container {
@@ -815,7 +817,7 @@ body.modal-open {
 
 .problems {
   overflow: hidden;
-  padding-bottom: 0px;
+  padding-bottom: 25px;
 }
 @media screen and (max-width: 768px) {
   .problems {
@@ -871,11 +873,11 @@ body.modal-open {
   display: flex;
   flex-wrap: wrap;
   height: 488px;
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
   padding-top: 50px;
   padding-right: 30px;
   padding-bottom: 20px;
   padding-left: 30px;
-  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
   background-color: #ffffff;
 }
 @media screen and (min-width: 768px) {
@@ -975,17 +977,24 @@ body.modal-open {
 @media screen and (min-width: 1366px) {
   .fire-problems-bg {
     position: absolute;
-    bottom: 177px;
+    bottom: 157px;
     right: -132px;
   }
 }
 
+@media screen and (min-width: 1630px) {
+  .fire-problems-bg {
+    bottom: -662px;
+    right: 0;
+  }
+}
 @keyframes change_fill {
   50% {
     fill: #f70f0f;
   }
 }
 .methods {
+  padding-top: 25px;
   text-align: center;
 }
 @media screen and (min-width: 1366px) {
