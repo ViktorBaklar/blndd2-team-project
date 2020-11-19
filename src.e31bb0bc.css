@@ -2267,6 +2267,10 @@ body.modal-open {
   outline: none;
 }
 
+.slider-item {
+  background: linear-gradient(90deg, white 0%, rgba(255, 132, 0, 0.2640406504) 29%, white 100%);
+}
+
 .registration {
   max-width: 1680px;
   margin-left: auto;
