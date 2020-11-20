@@ -117,14 +117,11 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"js/var-study.js":[function(require,module,exports) {
-$("a[href=#var-study]").on("click", function (e) {
-  var anchor = $(this);
-  $('html, body').stop().animate({
-    scrollTop: $(anchor.attr('href')).offset().top
-  }, 800);
-  e.preventDefault();
-  return false;
+})({"js/btn-menu.js":[function(require,module,exports) {
+var btn = $('.btn-menu');
+btn.on('click', function () {
+  $(this).toggleClass('active');
+  $(this).toggleClass('not-active');
 });
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -330,5 +327,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/var-study.js"], null)
-//# sourceMappingURL=/var-study.fd88bb72.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/btn-menu.js"], null)
+//# sourceMappingURL=/btn-menu.bcb3fe4d.js.map
