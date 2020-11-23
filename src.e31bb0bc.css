@@ -3212,6 +3212,9 @@ body.dark-theme .problems-titule-primary {
 body.dark-theme .problems-list {
   background-color: #3d3d3d;
 }
+body.dark-theme .problems-list-item {
+  color: #191d1f;
+}
 body.dark-theme .problems-list-item::before {
   background-color: #c44e00;
 }
