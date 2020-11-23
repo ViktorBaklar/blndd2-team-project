@@ -31,7 +31,7 @@ body {
 }
 
 body {
-  counter-reset: item;
+  counter-reset: item item-advantages;
 }
 
 .section {
@@ -395,7 +395,7 @@ body {
 }
 
 .header {
-  position: fixed;
+  position: absolute;
   z-index: 999;
   padding-top: 33px;
   width: 100%;
@@ -1961,6 +1961,11 @@ body {
   margin-right: 6px;
   height: 2px;
   width: 1em;
+}
+.item-advantages .number::after {
+  counter-increment: item-advantages;
+  content: "0" counter(item-advantages) " ";
+  color: #ff6b09;
 }
 
 @media screen and (max-width: 767px) {
